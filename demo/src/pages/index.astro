@@ -1,11 +1,13 @@
 ---
-import { Layout, Header, Map, Tags, Footer } from 'astro-travelens'
+import { Layout, Header, Tags, Footer, Map } from 'astro-travelens'
 import { SiteMetadata } from 'astro-travelens/config'
+import Gallery from '../components/Gallery.astro'
 ---
 
 <Layout title={SiteMetadata.title}>
 	<Header />
 	<Tags tags={["a", "b", "c"]} />
+	<Gallery folder="devils-corner" />
 	<Map text="Devil's Corner" lat={-41.97224} lng={148.15147} zoom={17} />
 	<Footer />
 </Layout>

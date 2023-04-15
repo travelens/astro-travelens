@@ -1,5 +1,5 @@
 ---
-import { NavigationLinks } from "../config"
+import { SiteMetadata, NavigationLinks } from "../config"
 ---
 <div
     x-data="{showMenu: false}"
@@ -31,9 +31,10 @@ import { NavigationLinks } from "../config"
     </div>
   </div>
   <div class="flex">
-    <a href="https://github.com/travelens" class="ml-4 hover:text-pink">
-      <span class="w-6 h-6 mr-2 i-fa6-brands-github"/>
-    </a>
+    <span class="i-fa6-brands-linkedin i-fa6-brands-facebook i-fa6-brands-instagram i-fa6-brands-github invisible">Ugly Hack</span>
+    {SiteMetadata.social.map(link => (
+      <a href={link.link} class="ml-4 hover:text-pink"><span class={'w-6 h-6 mr-2 i-fa6-brands-' + link.icon} /></a>
+    ))}
   </div>
   <div
     x-show="showMenu"

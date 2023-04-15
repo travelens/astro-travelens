@@ -2,7 +2,6 @@
 // Then, use this file to export everything you want your user to access.
 
 export { default as Footer } from './src/Footer.astro'
-export { default as Gallery } from './src/Gallery.astro'
 export { default as Header } from './src/Header.astro'
 export { default as Lightbox } from './src/Lightbox.astro'
 export { default as Map } from './src/Map.astro'

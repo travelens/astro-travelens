@@ -1,4 +1,5 @@
 export const SiteMetadata = {
+  site: 'https://travelens.github.io',
   title: 'travelens',
   description: 'Travels Through A Lens',
   author: {
@@ -44,12 +45,10 @@ export const SiteMetadata = {
   buildTime: new Date(),
 }
 
-export const TripImage = 'assets/trip.jpeg'
-export const AuthorImage = 'assets/trip.jpeg'
-
 export const NavigationLinks = [
   { name: 'Trips', href: '/trips' },
   { name: 'Places', href: '/#places' },
+  { name: 'Tags', href: '/tags' },
   { name: 'About', href: '/#about' },
 ]
 
@@ -62,24 +61,19 @@ export const AuthorDetail = {
 
 export const Websites = [
   {
+    website: 'Chris Tham',
+    link: 'https://christham.net'
+  },
+  {
     website: 'Hello Tham',
-    link: 'https://hellotham.com',
-    featured: true,
-    screenshot: '../images/website/hellotham.png',
-    description: 'I founded a booutique strategic consulting company called Hello Tham. This is the corporate website.',
+    link: 'https://hellotham.com'
   },
   {
     website: 'Travels Through a Lens',
-    link: 'https://travel.christham.net',
-    featured: true,
-    screenshot: '../images/website/travel.png',
-    description: 'This is a travelogue web site that that documents my travel adventures and trips over the years.',
+    link: 'https://travel.christham.net'
   },
   {
     website: 'Visual Voyager',
-    link: 'https://visualvoyager.net',
-    featured: true,
-    screenshot: '../images/website/visualvoyager.png',
-    description: 'This is my photography website, for exploring the world we live in, as seen through our unique perspectives and experiences.',
+    link: 'https://visualvoyager.net'
   },
 ]

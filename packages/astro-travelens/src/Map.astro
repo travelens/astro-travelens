@@ -9,19 +9,16 @@ export interface Props {
 
 const { text, lat, lng, zoom } = Astro.props
 ---
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-crossorigin=""/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script is:inline src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <map-inner data-text={text} data-lat={lat} data-lng={lng} data-zoom={zoom}></map-inner>
 <div id="map" class="mb-3 h-96"></div>
-<script>
-  import L from 'leaflet'
-
+<script is:inline>
   class MapInner extends HTMLElement {
     constructor() {
       super()
 
-      const loc: [number, number] = [Number(this.dataset.lat), Number(this.dataset.lng)]
+      const loc = [Number(this.dataset.lat), Number(this.dataset.lng)]
 
       var map = L.map('map').setView(loc, Number(this.dataset.zoom))
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

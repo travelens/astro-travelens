@@ -2,19 +2,19 @@
 
 Common components for travelens web site:
 
-- Footer
-- Gallery
-- Header
-- Lightbox
-- Map
-- Metadata
-- Tags
-- Layout
+- Footer (travelens footer)
+- Header (travelens header)
+- Lightbox (display images with Photoswipe as Lightbox)
+- Map (display Map with marker and callout using Leaflet and OpenStreetMaps)
+- Metadata (embed SEO metadata)
+- Tags (display tag)
+- Layout (page layout)
 
-Includes the following packages as peer dependencies:
+Also exposes travels config into (eg. SiteMetadata).
+
+Flags the following packages as peer dependencies:
 
 - @astrojs/alpinejs
-- @astrojs/markdoc
 - @iconify-json/fa6-brands
 - @iconify-json/fa6-solid
 - @iconify-json/flag
@@ -22,9 +22,5 @@ Includes the following packages as peer dependencies:
 - alpinejs
 - astro
 - astro-seo
-- exifr
-- leaflet
-- photoswipe
-- photoswipe-dynamic-caption
 - schema-dts
 - unocss
