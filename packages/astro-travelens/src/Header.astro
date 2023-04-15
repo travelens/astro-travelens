@@ -31,7 +31,7 @@ import { SiteMetadata, NavigationLinks } from "../config"
     </div>
   </div>
   <div class="flex">
-    <span class="i-fa6-brands-linkedin i-fa6-brands-facebook i-fa6-brands-instagram i-fa6-brands-github invisible">Ugly Hack</span>
+    <span class="i-fa6-brands-linkedin i-fa6-brands-facebook i-fa6-brands-instagram i-fa6-brands-github hidden">Ugly Hack</span>
     {SiteMetadata.social.map(link => (
       <a href={link.link} class="ml-4 hover:text-pink"><span class={'w-6 h-6 mr-2 i-fa6-brands-' + link.icon} /></a>
     ))}

@@ -52,13 +52,6 @@ export const NavigationLinks = [
   { name: 'About', href: '/#about' },
 ]
 
-export const AuthorDetail = {
-    name: 'Chris Tham',
-    description: 'Hello World',
-    contact: 'chris@christham.net',
-    image: '../images/authors/Chris Tham.jpg'
-  }
-
 export const Websites = [
   {
     website: 'Chris Tham',
