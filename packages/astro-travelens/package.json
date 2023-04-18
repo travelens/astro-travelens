@@ -1,7 +1,7 @@
 {
   "name": "astro-travelens",
   "description": "Common components for travelens web site.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://github.com/travelens/astro-travelens",
   "license": "MIT",
   "type": "module",
