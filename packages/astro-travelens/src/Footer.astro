@@ -28,7 +28,6 @@ class="bg-pink-100 text-gray-800 text-opacity-50 font-semibold text-xs tracking-
     <div class="font-display text-gray-900 text-sm tracking-widest mb-6">
       Social links
     </div>
-    <span class="i-fa6-brands-linkedin i-fa6-brands-facebook i-fa6-brands-instagram i-fa6-brands-github hidden">Ugly Hack</span>
     {SiteMetadata.social.map(link => (
       <a href={link.link} class="block mb-4 hover:text-pink"><span class={'w-6 h-6 mr-2 i-fa6-brands-' + link.icon} />{link.name}</a>
     ))}
