@@ -1,3 +1,5 @@
+import type { ImageMetadata } from 'astro'
+
 export const SiteMetadata = {
   site: 'https://travelens.github.io',
   title: 'travelens',
@@ -70,3 +72,21 @@ export const Websites = [
     link: 'https://visualvoyager.net'
   },
 ]
+
+export interface Document {
+  id: string
+  slug: string
+  base: string
+  collection: string
+  body: string
+  trip: string
+  place: string
+  timezone: string
+  location: string
+  title: string
+  description: string
+  date: Date
+  image: ImageMetadata
+  map: number[]
+  tags: string[]
+}
