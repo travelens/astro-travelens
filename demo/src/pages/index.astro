@@ -1,18 +1,26 @@
 ---
-import Layout from 'astro-travelens/layout'
-import Header from 'astro-travelens/header'
-import Tags from 'astro-travelens/tags'
-import Footer from 'astro-travelens/footer'
-import Map from 'astro-travelens/map'
+import Layout from "astro-travelens/layout"
+import Header from "astro-travelens/header"
+import Tags from "astro-travelens/tags"
+import Footer from "astro-travelens/footer"
+import Map from "astro-travelens/map"
 
-import { SiteMetadata } from 'astro-travelens/config'
-import Gallery from '../components/Gallery.astro'
+import { SiteMetadata } from "astro-travelens/config"
+import Gallery from "../components/Gallery.astro"
+
+import Cover from "../assets/gallery/devils-corner/Chris, Devil's Corner.jpeg"
 ---
 
-<Layout title={SiteMetadata.title}>
-	<Header />
-	<Tags tags={["a", "b", "c"]} />
-	<Gallery folder="devils-corner" />
-	<Map text="Devil's Corner" lat={-41.97224} lng={148.15147} zoom={17} />
-	<Footer />
-</Layout>
+<Layout
+  title={SiteMetadata.title}
+  title={SiteMetadata.title}
+  description={SiteMetadata.description}
+  date={SiteMetadata.buildTime}
+  image={Cover}
+  tags={["hello", "world"]}
+/>
+<Header />
+<Tags tags={["a", "b", "c"]} />
+<Gallery folder="devils-corner" />
+<Map text="Devil's Corner" lat={-41.97224} lng={148.15147} zoom={17} />
+<Footer />
