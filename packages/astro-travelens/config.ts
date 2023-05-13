@@ -64,8 +64,8 @@ export const Websites = [
     link: 'https://hellotham.com'
   },
   {
-    website: 'Travels Through a Lens',
-    link: 'https://travel.christham.net'
+    website: 'Buddhavacana',
+    link: 'https://christham.net/buddhavacana/'
   },
   {
     website: 'Visual Voyager',

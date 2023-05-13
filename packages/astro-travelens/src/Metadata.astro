@@ -30,7 +30,7 @@ const openGraph = {
   basic: {
     title: title,
     type: 'website',
-    image: image.src,
+    image: new URL(image.src, siteurl).toString(),
   },
   optional: {
     description: description,
@@ -74,7 +74,7 @@ const website: WithContext<WebSite> = {
   description: SiteMetadata.description,
   image: {
     '@type': 'ImageObject',
-    url: image.src
+    url: new URL(image.src, siteurl).toString()
   },
   inLanguage: 'en',
   name: SiteMetadata.title,
@@ -96,7 +96,7 @@ const organization: WithContext<Organization> = {
   description: SiteMetadata.org.summary,
   email: SiteMetadata.org.email,
   founder: {
-    '@id': SiteMetadata.org.url,
+    '@id': SiteMetadata.author.url,
   },
   location: SiteMetadata.location,
   // image: {
@@ -172,7 +172,7 @@ const article: WithContext<Article> = {
   keywords: tags && tags.join(', '),
   image: {
     '@type': 'ImageObject',
-    url: image.src,
+    url: new URL(image.src, siteurl).toString(),
   },
   inLanguage: 'en',
   mainEntityOfPage: SiteMetadata.org.url,
