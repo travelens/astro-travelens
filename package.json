@@ -6,6 +6,5 @@
   "workspaces": ["demo", "packages/*"],
   "devDependencies": {
     "prettier-plugin-astro": "^0.8.0"
-  },
-  "packageManager": "yarn@1.22.19"
+  }
 }

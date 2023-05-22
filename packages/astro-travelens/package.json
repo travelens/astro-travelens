@@ -1,7 +1,7 @@
 {
   "name": "astro-travelens",
   "description": "Common components for travelens web site.",
-  "version": "1.1.6",
+  "version": "1.1.8",
   "homepage": "https://github.com/travelens/astro-travelens",
   "license": "MIT",
   "type": "module",
@@ -31,19 +31,16 @@
     "ui"
   ],
   "scripts": {},
-  "dependencies": {
-    "astro": "^2.3.0"
-  },
   "peerDependencies": {
+    "astro": "^2.5.1",
     "@astrojs/alpinejs": "^0.2.1",
     "@iconify-json/fa6-brands": "^1.1.11",
     "@iconify-json/fa6-solid": "^1.1.13",
     "@iconify-json/flag": "^1.1.31",
     "@iconify-json/logos": "^1.1.24",
     "alpinejs": "^3.12.0",
-    "astro": "^2.3.0",
     "astro-seo": "^0.7.2",
     "schema-dts": "^1.1.2",
-    "unocss": "^0.51.2"
+    "unocss": "^0.51.13"
   }
 }
