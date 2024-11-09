@@ -1,9 +1,9 @@
 ---
 export interface Props {
-  points?: {
+  points: ({
     title: string
     latlng: number[]
-  }
+  } | undefined)[]
 }
 
 const { points } = Astro.props
